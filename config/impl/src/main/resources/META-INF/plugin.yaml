@@ -1,5 +1,5 @@
 id: common-config
 name: CommonConfig
 version: 1.0.0
-description: A common plugin for repository management.
+description: A common config plugin for store config
 main-class: org.akazukin.plugin.config.ConfigPlugin
