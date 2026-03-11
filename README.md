@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/Akazukin-Team/Java-Common-Plugin-Config/actions/workflows/build.yml/badge.svg)](https://github.com/Akazukin-Team/Java-Common-Plugin-Config/actions/workflows/build.yml)
 
-<PLACEHOLDER_DESCRIPTION>
+A common config plugin for store config
 
 ---
 
