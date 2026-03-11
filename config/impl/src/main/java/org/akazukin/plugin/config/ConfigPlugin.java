@@ -9,7 +9,7 @@ import org.akazukin.plugin.config.config.data.IConfigManager;
 
 @Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ConfigPlugin implements ICommonRepoPlugin {
+public class ConfigPlugin implements IConfigPlugin {
     final ILoader loader;
     IConfigManager cfgMgr;
 
