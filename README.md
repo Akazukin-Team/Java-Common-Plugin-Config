@@ -53,7 +53,7 @@ Make sure you have the following installed:
 2. Add the dependency to the `<dependencies>` block in your `pom.xml` file:
    ```xml
    <dependency>
-       <groupId>org.akazukin</groupId>
+       <groupId>org.akazukin.plugin</groupId>
        <artifactId>common-config</artifactId>
        <version>VERSION</version>
    </dependency>
@@ -74,7 +74,7 @@ Make sure you have the following installed:
 
 2. Add the dependency to the `dependencies` block in your `build.gradle` file:
    ```groovy
-   implementation 'org.akazukin:common-config:<VERSION>'
+   implementation 'org.akazukin.plugin:common-config:<VERSION>'
    ```
 
 ---
