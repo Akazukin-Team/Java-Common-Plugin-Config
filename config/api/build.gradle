@@ -1,0 +1,10 @@
+plugins {
+    id 'buildlogic.java-module-conventions'
+}
+
+dependencies {
+    compileOnly libs.slf4j
+
+    compileOnly libs.akz.loader
+    compileOnly libs.akz.service
+}

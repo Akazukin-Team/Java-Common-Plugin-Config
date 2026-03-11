@@ -1,0 +1,15 @@
+plugins {
+    id 'buildlogic.java-publish-conventions'
+}
+
+jar {
+    dependsOn(':config:api:jar')
+    dependsOn(':config:impl:jar')
+}
+
+dependencies {
+    libFatjar project(':config:api')
+    libFatjar project(':config:impl')
+
+    api libs.akz.service
+}

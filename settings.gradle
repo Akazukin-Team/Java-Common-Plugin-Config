@@ -6,6 +6,13 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
 
-rootProject.name = '<PLACEHOLDER_NAME>'
+rootProject.name = 'Common Config Plugin'
 
-include()
+include(
+        ':config:api',
+        ':config:impl'
+)
+
+include(
+        ':publish'
+)

@@ -1,0 +1,10 @@
+plugins {
+    id 'buildlogic.java-module-conventions'
+}
+
+dependencies {
+    compileOnly project(':config:api')
+
+    compileOnly libs.akz.service
+    compileOnly libs.akz.loader
+}

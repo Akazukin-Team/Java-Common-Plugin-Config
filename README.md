@@ -1,6 +1,6 @@
-# <PLACEHOLDER_NAME>
+# Common Config Plugin
 
-[![Build Status](https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>/actions/workflows/build.yml/badge.svg)](https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>/actions/workflows/build.yml)
+[![Build Status](https://github.com/Akazukin-Team/Java-Common-Plugin-Config/actions/workflows/build.yml/badge.svg)](https://github.com/Akazukin-Team/Java-Common-Plugin-Config/actions/workflows/build.yml)
 
 <PLACEHOLDER_DESCRIPTION>
 
@@ -46,7 +46,7 @@ Make sure you have the following installed:
    <repository>
        <id>akazukin-repo</id>
        <name>Akazukin Repository</name>
-       <url>https://maven.akazukin.org/refer/maven-<PLACEHOLDER_MAVEN>/</url>
+       <url>https://maven.akazukin.org/refer/maven-public-plugins/</url>
    </repository>
    ```
 
@@ -54,7 +54,7 @@ Make sure you have the following installed:
    ```xml
    <dependency>
        <groupId>org.akazukin</groupId>
-       <artifactId><PLACEHOLDER_ARTIFACT></artifactId>
+       <artifactId>common-config</artifactId>
        <version>VERSION</version>
    </dependency>
    ```
@@ -68,13 +68,13 @@ Make sure you have the following installed:
    ```groovy
    maven {
        name = 'Akazukin Repository'
-       url = 'https://maven.akazukin.org/refer/maven-<PLACEHOLDER_MAVEN>/'
+       url = 'https://maven.akazukin.org/refer/maven-public-plugins/'
    }
    ```
 
 2. Add the dependency to the `dependencies` block in your `build.gradle` file:
    ```groovy
-   implementation 'org.akazukin:<PLACEHOLDER_ARTIFACT>:<VERSION>'
+   implementation 'org.akazukin:common-config:<VERSION>'
    ```
 
 ---
@@ -93,8 +93,8 @@ To build the project from source, follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/Akazukin-Team/<PLACEHOLDER_REPO>.git
-   cd <PLACEHOLDER_REPO>
+   git clone https://github.com/Akazukin-Team/Java-Common-Plugin-Config.git
+   cd Java-Common-Plugin-Config
    ```
 
 2. Build the project with Gradle:
