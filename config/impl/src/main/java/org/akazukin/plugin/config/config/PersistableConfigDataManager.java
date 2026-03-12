@@ -11,10 +11,10 @@ import java.io.IOException;
 import java.util.function.Supplier;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ConfigStorageManager<T extends IConfigData> extends ConfigDataManager<T> implements IPersistableConfigDataManager<T> {
+public class PersistableConfigDataManager<T extends IConfigData> extends ConfigDataManager<T> implements IPersistableConfigDataManager<T> {
     final IConfigStorageManager<T> dataMgr;
 
-    public ConfigStorageManager(@NotNull final Class<T> configClass, @NotNull final Supplier<@NotNull T> instanceSup, @NotNull final IConfigStorageManager<T> dataMgr) {
+    public PersistableConfigDataManager(@NotNull final Class<T> configClass, @NotNull final Supplier<@NotNull T> instanceSup, @NotNull final IConfigStorageManager<T> dataMgr) {
         super(configClass, instanceSup);
         this.config = instanceSup.get();
         this.dataMgr = dataMgr;
