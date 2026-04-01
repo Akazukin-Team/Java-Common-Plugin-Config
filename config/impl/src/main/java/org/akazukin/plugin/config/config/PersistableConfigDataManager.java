@@ -36,7 +36,7 @@ public class PersistableConfigDataManager<T extends IConfigData> extends ConfigD
             this.config = instance;
             return instance;
         } catch (final IOException e) {
-            throw new IOException("Failed to load config via PersistableConfig.load()", e);
+            throw new IOException("Failed to load config via PersistableConfig.loadConfig()", e);
         }
     }
 
@@ -45,7 +45,7 @@ public class PersistableConfigDataManager<T extends IConfigData> extends ConfigD
         try {
             this.dataMgr.saveConfig(this.config);
         } catch (final IOException e) {
-            throw new IOException("Failed to save config via PersistableConfig.save()", e);
+            throw new IOException("Failed to save config via PersistableConfig.saveConfig()", e);
         }
     }
 }
